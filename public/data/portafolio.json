@@ -1,0 +1,127 @@
+{
+  "personal": {
+    "nombre": "Juan Carlos Jiménez Castrillo",
+    "profesion": "Estudiante de Informática Empresarial",
+    "universidad": "Universidad de Costa Rica, Sede de Guanacaste",
+    "ubicacion": "Guanacaste, Costa Rica",
+    "perfil": "Estudiante de Informática Empresarial con experiencia en desarrollo web, infraestructura IT, análisis de datos y automatización de procesos. Enfocado en soluciones tecnológicas estratégicas orientadas a eficiencia y transformación digital.",
+    "contacto": {
+      "email": "juan.jimenezcastrillo@ucr.ac.cr",
+      "whatsapp": "+506 6382 4488",
+      "linkedin": "https://www.linkedin.com/in/juan-carlos-jiménez-castrillo",
+      "github": "https://github.com/JCarlosJimenezC",
+      "youtube": "http://www.youtube.com/@JcarlosJiménez-h8v"
+    }
+  },
+
+  "educacion": [
+    {
+      "id": 1,
+      "institucion": "Universidad de Costa Rica",
+      "titulo": "Bachillerato en Informática Empresarial",
+      "periodo": "2023 - Presente",
+      "estado": "En curso"
+    },
+    {
+      "id": 2,
+      "institucion": "CTP Nicoya",
+      "titulo": "Técnico en Informática y Redes",
+      "periodo": "Graduado 2022",
+      "estado": "Completado"
+    },
+    {
+      "id": 3,
+      "institucion": "Cisco Networking Academy",
+      "titulo": "CCNA 1 - Introducción a Redes",
+      "periodo": "2021",
+      "estado": "Completado"
+    }
+  ],
+
+  "experiencia": [
+    {
+      "id": 1,
+      "empresa": "Compañía Informática Europea S.A.",
+      "puesto": "Soporte Técnico",
+      "modalidad": "Presencial",
+      "periodo": "2022",
+      "duracion": "3 meses",
+      "tareas": [
+        "Mantenimiento de equipos de cómputo",
+        "Instalación y configuración de sistemas operativos",
+        "Soporte técnico a usuarios",
+        "Elaboración de reportes técnicos"
+      ]
+    },
+    {
+      "id": 2,
+      "empresa": "PARCUVE",
+      "puesto": "Desarrollador Web",
+      "modalidad": "Remoto",
+      "periodo": "Mayo - Julio 2024",
+      "duracion": "3 meses",
+      "tareas": [
+        "Desarrollo de sitio web institucional",
+        "Gestión de módulos de cursos y certificaciones",
+        "Diseño de interfaces responsive",
+        "Integración entre Front-End y Back-End"
+      ]
+    }
+  ],
+
+  "habilidades": {
+    "tecnicas": [
+      {
+        "categoria": "Desarrollo Web",
+        "tecnologias": ["HTML5", "CSS", "JavaScript", "PHP", "Java", "C#", "Python", "ASP.NET", "MVC", "APIs"]
+      },
+      {
+        "categoria": "Bases de Datos",
+        "tecnologias": ["MySQL", "PostgreSQL", "MongoDB"]
+      },
+      {
+        "categoria": "Redes",
+        "tecnologias": ["VLANs", "IPv4/IPv6", "Cisco Packet Tracer", "VirtualBox", "ZeroTier"]
+      },
+      {
+        "categoria": "Análisis de Datos",
+        "tecnologias": ["Limpieza de datos", "Transformación", "Visualización", "Big Data", "IoT"]
+      },
+      {
+        "categoria": "IA Aplicada",
+        "tecnologias": ["ChatGPT", "GitHub Copilot", "Gemini"]
+      },
+      {
+        "categoria": "Gestión IT",
+        "tecnologias": ["Odoo", "Monday.com", "Jira", "Scrum", "BPM"]
+      },
+      {
+        "categoria": "Ciberseguridad",
+        "tecnologias": ["Gestión de accesos", "Backups", "Protección de redes"]
+      },
+      {
+        "categoria": "Herramientas",
+        "tecnologias": ["Git", "GitHub", "VS Code", "LaTeX", "Windows", "Linux"]
+      }
+    ],
+    "blandas": [
+      "Comunicación efectiva",
+      "Trabajo en equipo",
+      "Liderazgo y toma de decisiones",
+      "Pensamiento crítico",
+      "Organización y gestión del tiempo",
+      "Adaptabilidad y aprendizaje continuo"
+    ]
+  },
+
+  "idiomas": [
+    {
+      "idioma": "Español",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Inglés",
+      "nivel": "B1 - Técnico"
+    }
+  ]
+}
