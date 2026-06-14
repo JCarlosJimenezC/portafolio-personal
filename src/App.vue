@@ -1,34 +1,60 @@
 <template>
-  <div id="app">
-    <header>
-      <h1>Mi Portafolio Personal</h1>
-      <nav>
-        <a href="#about">Sobre mí</a>
-        <a href="#gallery">Trabajos</a>
-        <a href="#skills">Habilidades</a>
-      </nav>
-    </header>
-  </div>
+  <AppHeader />
+  <main class="main-content">
+    <div v-if="portfolio">
+      <About    :personal="portfolio.personal" />
+      <VideoIntro />
+      <Gallery  :proyectos="portfolio.proyectos" />
+      <Skills   :habilidades="portfolio.habilidades" />
+      <Education />
+      <Experiencia />
+      <Contact />
+    </div>
+    <div v-else class="loading" aria-live="polite">Cargando...</div>
+  </main>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
+import AppHeader   from './components/Header.vue'
+import About       from './components/About.vue'
+import VideoIntro  from './components/VideoIntro.vue'
+import Gallery     from './components/Gallery.vue'
+import Skills      from './components/Skills.vue'
+import Education   from './components/Education.vue'
+import Experiencia from './components/Experiencia.vue'
+import Contact     from './components/Contact.vue'
+
+const portfolio = ref(null)
+
+onMounted(async () => {
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}data/portafolio.json`)
+    portfolio.value = await res.json()
+  } catch (err) {
+    console.error('Error cargando portfolio:', err)
+  }
+})
 </script>
 
-<style scoped>
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+<style>
+.main-content {
+  padding-top: 3.5rem;
 }
 
-nav {
-  margin-top: 1rem;
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--teal-medio);
+  font-size: 1rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 250px;
+    padding-top: 0;
+  }
 }
 </style>

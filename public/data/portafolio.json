@@ -1,6 +1,9 @@
 {
   "personal": {
     "nombre": "Juan Carlos Jiménez Castrillo",
+    "foto": "juanky.png",
+    "audio": "juanky-audio.mp3",
+    "video": "juanky-video.mp4",
     "profesion": "Estudiante de Informática Empresarial",
     "universidad": "Universidad de Costa Rica, Sede de Guanacaste",
     "ubicacion": "Guanacaste, Costa Rica",
@@ -13,6 +16,25 @@
       "youtube": "http://www.youtube.com/@JcarlosJiménez-h8v"
     }
   },
+
+  "proyectos": [
+    {
+      "id": 1,
+      "titulo": "Guía Turística Multimedia Costa Rica",
+      "descripcion": "Aplicación web interactiva que muestra atractivos turísticos de Costa Rica usando Web Components, SVG y animaciones CSS. Incluye mapas, galería de fotos y narración de audio por región.",
+      "imagen": "proyecto-jc.png",
+      "tecnologias": ["Web Components", "SVG", "JavaScript", "CSS", "GitHub Pages"],
+      "enlace": "https://github.com/JCarlosJimenezC"
+    },
+    {
+      "id": 2,
+      "titulo": "Sistema de Gestión de Restaurante",
+      "descripcion": "Aplicación ASP.NET Core MVC para la administración integral de un restaurante: gestión de menú, pedidos, inventario y reportes de ventas con base de datos SQL Server.",
+      "imagen": "proyecto-jc-2.png",
+      "tecnologias": ["ASP.NET Core", "MVC", "C#", "SQL Server", "Bootstrap"],
+      "enlace": "https://github.com/JCarlosJimenezC"
+    }
+  ],
 
   "educacion": [
     {
