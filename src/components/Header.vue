@@ -50,14 +50,14 @@
         </svg>
       </a>
       <a
-        href="https://www.linkedin.com/in/juan-carlos-jiménez-castrillo"
+        href="http://www.youtube.com/@JcarlosJiménez-h8v"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="LinkedIn"
+        aria-label="YouTube"
         class="red-social"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
         </svg>
       </a>
     </div>
@@ -72,33 +72,45 @@ const menuAbierto = ref(false)
 const seccionActiva = ref('about')
 
 const enlaces = [
-  { id: 'about',      texto: 'About' },
+  { id: 'about',      texto: 'Sobre mí' },
   { id: 'gallery',    texto: 'Proyectos' },
-  { id: 'skills',     texto: 'Skills' },
-  { id: 'experiencia', texto: 'Experiencia' },
+  { id: 'skills',     texto: 'Habilidades' },
   { id: 'educacion',  texto: 'Educación' },
+  { id: 'experiencia', texto: 'Experiencia' },
   { id: 'contacto',   texto: 'Contacto' },
 ]
 
-let observer = null
+function actualizarSeccion() {
+  const secciones = document.querySelectorAll('section[id]')
+
+  const alFondo = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 60
+  if (alFondo) {
+    const id = secciones[secciones.length - 1]?.id ?? 'about'
+    if (id !== seccionActiva.value) {
+      seccionActiva.value = id
+      history.replaceState(null, '', `#${id}`)
+    }
+    return
+  }
+
+  const punto = window.scrollY + window.innerHeight * 0.4
+  let activa = secciones[0]?.id ?? 'about'
+  secciones.forEach(sec => {
+    if (sec.offsetTop <= punto) activa = sec.id
+  })
+  if (activa !== seccionActiva.value) {
+    seccionActiva.value = activa
+    history.replaceState(null, '', `#${activa}`)
+  }
+}
 
 onMounted(() => {
-  const secciones = document.querySelectorAll('section[id]')
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          seccionActiva.value = entry.target.id
-        }
-      })
-    },
-    { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
-  )
-  secciones.forEach((seccion) => observer.observe(seccion))
+  actualizarSeccion()
+  window.addEventListener('scroll', actualizarSeccion, { passive: true })
 })
 
 onUnmounted(() => {
-  observer?.disconnect()
+  window.removeEventListener('scroll', actualizarSeccion)
 })
 </script>
 
@@ -171,13 +183,13 @@ onUnmounted(() => {
   position: fixed;
   inset-block: 0;
   inset-inline-start: 0;
-  width: 250px;
+  width: 270px;
   height: 100vh;
   background-color: var(--azul-noche);
   color: var(--crema);
   display: flex;
   flex-direction: column;
-  padding: var(--espacio-lg) var(--espacio-sm) var(--espacio-md);
+  padding: 1.75rem var(--espacio-sm) var(--espacio-sm);
   overflow-y: auto;
   z-index: 100;
   transform: translateX(-100%);
@@ -191,28 +203,28 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--espacio-xs);
+  gap: 0.5rem;
   text-align: center;
-  margin-bottom: var(--espacio-sm);
+  margin-bottom: 0.4rem;
 }
 
 .foto {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--teal-medio);
 }
 
 .nombre {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--crema);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--blanco);
   margin: 0;
 }
 
 .titulo {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--verde-suave);
   max-width: none;
 }
@@ -221,42 +233,41 @@ onUnmounted(() => {
 .separador {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  margin-block: var(--espacio-sm);
+  margin-block: 0.4rem;
 }
 
 /* ── Navegación ─────────────────────────────────────── */
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  flex: 1;
+  gap: 0.3rem;
+  margin-block: auto;
 }
 
 .nav-link {
   display: block;
-  padding: 0.6rem var(--espacio-sm);
+  padding: 0.65rem 1rem;
   border-radius: var(--radio);
-  color: var(--crema);
-  font-size: 0.9rem;
+  color: var(--blanco);
+  font-size: 0.95rem;
   font-weight: 500;
+  text-align: center;
   text-decoration: none;
   transition:
     background-color var(--transicion),
-    color var(--transicion),
-    padding-left var(--transicion);
+    color var(--transicion);
 }
 
 .nav-link:hover {
-  background-color: rgba(90, 138, 146, 0.2);
+  background-color: rgba(0, 200, 81, 0.15);
   color: var(--verde-suave);
   text-decoration: none;
-  padding-left: 1.25rem;
 }
 
 .nav-link.activo {
   background-color: var(--teal-medio);
-  color: #fff;
-  padding-left: 1.25rem;
+  color: #000;
+  font-weight: 700;
 }
 
 /* ── Redes sociales ─────────────────────────────────── */
@@ -266,18 +277,23 @@ onUnmounted(() => {
   gap: var(--espacio-sm);
   padding-top: var(--espacio-sm);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: auto;
+  margin-top: var(--espacio-sm);
 }
 
 .red-social {
   color: var(--verde-suave);
   display: flex;
   align-items: center;
-  transition: color var(--transicion), transform var(--transicion);
+  justify-content: center;
+  padding: 0.45rem;
+  border: 1.5px solid var(--verde-2);
+  border-radius: var(--radio);
+  transition: color var(--transicion), transform var(--transicion), background-color var(--transicion);
 }
 
 .red-social:hover {
-  color: var(--crema);
+  color: var(--verde-suave);
+  background-color: rgba(0, 200, 81, 0.15);
   transform: translateY(-2px);
   text-decoration: none;
 }

@@ -8,23 +8,40 @@
 }
 
 :root {
-  /* Paleta Hills */
-  --azul-noche: #1a2a3a;
-  --teal-medio: #5a8a92;
-  --verde-suave: #a8c0b8;
-  --gris-claro: #d4dcd4;
-  --crema: #efe9d8;
+  /* Paleta negro + verde + blanco */
+  --negro: #000000;
+  --negro-card: #111111;
+  --blanco: #ffffff;
+  --verde-1: #39ff14;   /* neon green — títulos llamativos */
+  --verde-2: #00c851;   /* verde brillante — acento principal */
+  --verde-3: #2ecc71;   /* esmeralda — acento secundario */
+  --verde-4: #7fff00;   /* chartreuse — variante cálida */
+  --verde-5: #b2ff59;   /* verde claro pastel */
+
+  /* Aliases para compatibilidad con componentes existentes */
+  --azul-noche: var(--negro-card);
+  --teal-medio: var(--verde-2);
+  --verde-suave: var(--verde-3);
+  --gris-claro: rgba(255, 255, 255, 0.55);
+  --crema: var(--negro);
+
+  /* Neon aliases → variantes de verde */
+  --neon-cyan: var(--verde-2);
+  --neon-pink: var(--verde-1);
+  --neon-green: var(--verde-3);
+  --neon-purple: var(--verde-4);
+  --neon-yellow: var(--verde-5);
+  --neon-orange: var(--verde-1);
 
   /* Roles semánticos */
-  --color-fondo: var(--crema);
-  --color-superficie: #fff;
-  --color-texto: var(--azul-noche);
-  --color-texto-secundario: var(--teal-medio);
-  --color-acento: var(--teal-medio);
-  --color-borde: var(--gris-claro);
+  --color-fondo: var(--negro);
+  --color-superficie: var(--negro-card);
+  --color-texto: var(--blanco);
+  --color-acento: var(--verde-2);
+  --color-borde: rgba(255, 255, 255, 0.12);
 
   /* Tipografía */
-  --fuente-base: 'Inter', system-ui, sans-serif;
+  --fuente-base: 'Times New Roman', Times, serif;
   --tamaño-base: 1rem;
   --altura-linea: 1.65;
 
@@ -39,9 +56,9 @@
   --ancho-contenedor: 1100px;
   --radio: 8px;
 
-  /* Sombras */
-  --sombra-sm: 0 2px 8px rgba(26, 42, 58, 0.08);
-  --sombra-md: 0 6px 24px rgba(26, 42, 58, 0.12);
+  /* Sombras — glow verde */
+  --sombra-sm: 0 0 10px rgba(0, 200, 81, 0.2);
+  --sombra-md: 0 0 24px rgba(0, 200, 81, 0.35);
 
   /* Transición global */
   --transicion: 0.25s ease;
@@ -65,8 +82,8 @@ html {
 body {
   font-family: var(--fuente-base);
   line-height: var(--altura-linea);
-  color: var(--color-texto);
-  background-color: var(--color-fondo);
+  color: var(--blanco);
+  background-color: var(--negro);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -90,28 +107,26 @@ h2,
 h3,
 h4 {
   font-family: var(--fuente-base);
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--azul-noche);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--blanco);
 }
 
 h1 {
-  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
 h2 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  letter-spacing: -0.02em;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
 }
 
 h3 {
-  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
 }
 
 h4 {
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 p {
@@ -156,6 +171,17 @@ ul {
   }
 }
 
+.section + .section {
+  border-top: 2px solid var(--azul-noche);
+}
+
+.titulo-seccion {
+  text-align: center;
+}
+.titulo-seccion::after {
+  margin-inline: auto;
+}
+
 /* Botón principal */
 .btn {
   display: inline-flex;
@@ -165,7 +191,7 @@ ul {
   border-radius: var(--radio);
   font-family: var(--fuente-base);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   border: 2px solid transparent;
   background-color: var(--teal-medio);

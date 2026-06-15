@@ -66,15 +66,14 @@ onUnmounted(() => observer?.disconnect())
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: var(--teal-medio);
-  border: 2px solid var(--azul-noche);
-  box-shadow: 0 0 0 3px rgba(90, 138, 146, 0.3);
+  background-color: var(--neon-yellow);
+  border: 2px solid var(--negro);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
   transform: translateX(-0.4375rem);
 }
 
 .exp-contenido {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--azul-noche);
   border-radius: var(--radio);
   padding: var(--espacio-sm) var(--espacio-md);
 }
@@ -88,7 +87,7 @@ onUnmounted(() => observer?.disconnect())
 }
 
 .exp-empresa {
-  color: var(--crema);
+  color: var(--blanco);
   font-size: 1.05rem;
 }
 

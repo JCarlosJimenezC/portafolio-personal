@@ -3,7 +3,6 @@
   <main class="main-content">
     <div v-if="portfolio">
       <About    :personal="portfolio.personal" />
-      <VideoIntro />
       <Gallery  :proyectos="portfolio.proyectos" />
       <Skills   :habilidades="portfolio.habilidades" />
       <Education />
@@ -18,7 +17,6 @@
 import { ref, onMounted } from 'vue'
 import AppHeader   from './components/Header.vue'
 import About       from './components/About.vue'
-import VideoIntro  from './components/VideoIntro.vue'
 import Gallery     from './components/Gallery.vue'
 import Skills      from './components/Skills.vue'
 import Education   from './components/Education.vue'

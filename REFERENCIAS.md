@@ -39,7 +39,19 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 
 ---
 
-## 4. Recursos multimedia — Licencias
+## 4. Proyectos académicos exhibidos
+
+| # | Proyecto | Curso | Profesor | Repositorio |
+|---|---|---|---|---|
+| 1 | Guía Turística Multimedia Costa Rica | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/proyecto-guia-turistica |
+| 2 | Sistema de Gestión de Restaurante *(grupal)* | IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026 · UCR | Luis Fernando Charpentier González | https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante |
+| 3 | Aurora Boutique — Tienda de Moda en Línea | IF-5100 Administración de Bases de Datos · I Ciclo 2026 · UCR | MSc. Andrés Alberto Cortés Fuentes | https://github.com/TatianaJSM/BoutiqueAurora |
+| 4 | Sistema de Declaraciones Juradas UCR *(grupal)* | IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/1KATZUNO/Declaracion_Jurada |
+
+---
+
+## 5. Recursos multimedia — Licencias
+
 
 | Recurso | Archivo | Origen | Licencia |
 |---|---|---|---|
@@ -47,12 +59,13 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 | Audio de autopresentación | `juanky-audio.mp3` | Grabación de voz realizada por el estudiante | Autoría propia |
 | Video de introducción | `juanky-video.mp4` | Video grabado por el estudiante | Autoría propia |
 | Imagen proyecto 1 | `proyecto-jc.png` | Captura de pantalla de proyecto propio | Autoría propia |
-| Imagen proyecto 2 | `proyecto-jc-2.png` | Captura de pantalla de proyecto propio | Autoría propia |
+| Imagen proyecto 2 | `Gestor-Restaurante.png` | Captura de pantalla de proyecto propio | Autoría propia |
+| Imagen proyecto 4 | `Declaracion-jurada.png` | Captura de pantalla de proyecto propio | Autoría propia |
 | Tipografía Inter | `Inter.var.woff2` | Rasmus Andersson / Google Fonts | SIL Open Font License 1.1 |
 
 ---
 
-## 5. Herramientas de IA utilizadas
+## 6. Herramientas de IA utilizadas
 
 - **Claude (Anthropic) — claude.ai:**
   - Apoyo en la comprensión de la Composition API de Vue 3

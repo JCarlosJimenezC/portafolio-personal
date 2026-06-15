@@ -36,11 +36,11 @@ onMounted(async () => {
 
 <style scoped>
 .experiencia {
-  background-color: var(--azul-noche);
+  background-color: var(--crema);
 }
 
 .titulo-seccion {
-  color: var(--crema);
+  color: var(--verde-2);
   margin-bottom: var(--espacio-lg);
 }
 
@@ -49,7 +49,7 @@ onMounted(async () => {
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--teal-medio);
+  background: var(--verde-2);
   margin-top: 0.5rem;
   border-radius: 2px;
 }

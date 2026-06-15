@@ -47,11 +47,11 @@ defineProps({
 
 <style scoped>
 .skills {
-  background-color: var(--gris-claro);
+  background-color: var(--crema);
 }
 
 .titulo-seccion {
-  color: var(--azul-noche);
+  color: var(--verde-2);
   margin-bottom: var(--espacio-lg);
 }
 
@@ -60,7 +60,7 @@ defineProps({
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--teal-medio);
+  background: var(--verde-2);
   margin-top: 0.5rem;
   border-radius: 2px;
 }
@@ -70,7 +70,7 @@ defineProps({
 }
 
 .skills-subtitulo {
-  color: var(--azul-noche);
+  color: var(--blanco);
   font-size: 1.05rem;
   margin-bottom: var(--espacio-sm);
 }
@@ -82,15 +82,14 @@ defineProps({
 }
 
 .categoria {
-  background: #fff;
+  background: var(--azul-noche);
   border-radius: var(--radio);
   padding: var(--espacio-sm);
-  box-shadow: var(--sombra-sm);
 }
 
 .categoria-nombre {
   font-weight: 600;
-  color: var(--azul-noche);
+  color: var(--verde-suave);
   font-size: 0.82rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -110,24 +109,27 @@ defineProps({
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 500;
-  background-color: var(--teal-medio);
-  color: #fff;
+  background-color: var(--neon-cyan);
+  color: #000;
   cursor: default;
   animation: aparecerTag 0.4s ease both;
-  transition: transform var(--transicion), background-color var(--transicion);
+  transition: transform var(--transicion), background-color var(--transicion), color var(--transicion);
 }
 
 .tag:hover {
   transform: scale(1.1);
-  background-color: var(--azul-noche);
+  background-color: #fff;
+  color: #000;
 }
 
 .tag--blanda {
-  background-color: var(--azul-noche);
+  background-color: var(--verde-3);
+  color: #000;
 }
 
 .tag--blanda:hover {
-  background-color: var(--teal-medio);
+  background-color: #fff;
+  color: #000;
 }
 
 @keyframes aparecerTag {
