@@ -58,7 +58,14 @@ portafolio-personal/
 
 ## Capturas de pantalla
 
-_(Próximamente conforme avance el proyecto)_
+| Sección | Vista |
+|---|---|
+| Sobre mí | ![Sobre mí](screenshots/Sobre_mi.jpeg) |
+| Proyectos | ![Proyectos](screenshots/Proyectos.jpeg) |
+| Habilidades | ![Habilidades](screenshots/Habilidades.jpeg) |
+| Experiencia | ![Experiencia](screenshots/Experiencia.jpeg) |
+| Educación | ![Educación](screenshots/Educación.jpeg) |
+| Contacto | ![Contacto](screenshots/Contacto.jpeg) |
 
 ## Información del curso
 
