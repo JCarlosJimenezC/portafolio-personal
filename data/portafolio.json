@@ -7,7 +7,7 @@
     "profesion": "Estudiante de Informática Empresarial",
     "universidad": "Universidad de Costa Rica, Sede de Guanacaste",
     "ubicacion": "Guanacaste, Costa Rica",
-    "perfil": "Estudiante de Informática Empresarial con experiencia en desarrollo web, infraestructura IT, análisis de datos y automatización de procesos. Enfocado en soluciones tecnológicas estratégicas orientadas a eficiencia y transformación digital.",
+    "perfil": "Estudiante de Informática Empresarial con experiencia en desarrollo web, infraestructura IT, análisis de datos y automatización de procesos, enfocado en soluciones tecnológicas estratégicas orientadas a eficiencia y transformación digital.",
     "contacto": {
       "email": "juan.jimenezcastrillo@ucr.ac.cr",
       "whatsapp": "+506 6382 4488",
@@ -22,17 +22,56 @@
       "id": 1,
       "titulo": "Guía Turística Multimedia Costa Rica",
       "descripcion": "Aplicación web interactiva que muestra atractivos turísticos de Costa Rica usando Web Components, SVG y animaciones CSS. Incluye mapas, galería de fotos y narración de audio por región.",
-      "imagen": "proyecto-jc.png",
+      "imagen": "Guia-Turistica.png",
       "tecnologias": ["Web Components", "SVG", "JavaScript", "CSS", "GitHub Pages"],
-      "enlace": "https://github.com/JCarlosJimenezC"
+      "enlace": "https://github.com/JCarlosJimenezC/proyecto-guia-turistica",
+      "curso": "IF-7102 Multimedios · I Ciclo 2026",
+      "profesor": "Lic. Iván Alonso Chavarría Cubero",
+      "grupal": true
     },
     {
       "id": 2,
       "titulo": "Sistema de Gestión de Restaurante",
-      "descripcion": "Aplicación ASP.NET Core MVC para la administración integral de un restaurante: gestión de menú, pedidos, inventario y reportes de ventas con base de datos SQL Server.",
-      "imagen": "proyecto-jc-2.png",
+      "descripcion": "Aplicación ASP.NET Core MVC para la administración integral de un restaurante: gestión de menú, pedidos, inventario y reportes de ventas con base de datos SQL Server. Proyecto grupal.",
+      "imagen": "Gestor-Restaurante.png",
       "tecnologias": ["ASP.NET Core", "MVC", "C#", "SQL Server", "Bootstrap"],
-      "enlace": "https://github.com/JCarlosJimenezC"
+      "enlace": "https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante",
+      "curso": "IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026",
+      "profesor": "Luis Fernando Charpentier González",
+      "grupal": true
+    },
+    {
+      "id": 3,
+      "titulo": "Aurora Boutique — Tienda Femenina",
+      "descripcion": "E-commerce completo para tienda de ropa femenina con catálogo de productos, carrito de compras, gestión de pedidos, facturación en PDF enviada por correo y panel de administración con estadísticas.",
+      "imagen": "aurora-boutique.jpg",
+      "tecnologias": ["ASP.NET Core", "MVC", "C#", "PostgreSQL", "Entity Framework", "Bootstrap", "iTextSharp"],
+      "enlace": "https://github.com/TatianaJSM/BoutiqueAurora",
+      "curso": "IF-5100 Administración de Bases de Datos · I Ciclo 2026",
+      "profesor": "MSc. Andrés Alberto Cortés Fuentes",
+      "grupal": true
+    },
+    {
+      "id": 5,
+      "titulo": "El Impostor Ambiental",
+      "descripcion": "Juego educativo de deducción multijugador local con temática ecológica. Los jugadores reciben roles secretos: la mayoría conoce una palabra ambiental y debe dar pistas, mientras el Impostor finge conocerla. Incluye efectos de sonido, animaciones CSS y 15 palabras temáticas.",
+      "imagen": "El_Impostor_Ambiental.png",
+      "tecnologias": ["Vue 3", "Vite", "JavaScript", "CSS"],
+      "enlace": "https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental",
+      "curso": "IF-7102 Multimedios · I Ciclo 2026",
+      "profesor": "Lic. Iván Alonso Chavarría Cubero",
+      "grupal": false
+    },
+    {
+      "id": 4,
+      "titulo": "Sistema de Declaraciones Juradas UCR",
+      "descripcion": "Aplicación web para gestión de declaraciones juradas universitarias. Incluye CRUD con control de fechas de vigencia, exportación a PDF y Excel, sistema de notificaciones en tiempo real con badge dinámico, alertas por correo SMTP y recordatorios automáticos de vencimiento.",
+      "imagen": "Declaracion-jurada.png",
+      "tecnologias": ["Laravel", "PHP", "Inertia.js", "React", "SQLite", "DomPDF", "PhpSpreadsheet"],
+      "enlace": "https://github.com/1KATZUNO/Declaracion_Jurada",
+      "curso": "IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026",
+      "profesor": "Lic. Iván Alonso Chavarría Cubero",
+      "grupal": true
     }
   ],
 
@@ -78,6 +117,7 @@
     {
       "id": 2,
       "empresa": "PARCUVE",
+      "url": "https://www.cursosparcuve.com/",
       "puesto": "Desarrollador Web",
       "modalidad": "Remoto",
       "periodo": "Mayo - Julio 2024",
@@ -97,21 +137,24 @@
         "categoria": "Desarrollo Web",
         "tecnologias": ["HTML5", "CSS", "JavaScript", "PHP", "Java", "C#", "Python", "ASP.NET", "MVC", "APIs"]
       },
-      {
-        "categoria": "Bases de Datos",
-        "tecnologias": ["MySQL", "PostgreSQL", "MongoDB"]
+     {
+        "categoria": "Herramientas de Análisis de Datos",
+        "tecnologias": ["Power BI", "Excel", "Tableau"]
       },
+  
       {
         "categoria": "Redes",
-        "tecnologias": ["VLANs", "IPv4/IPv6", "Cisco Packet Tracer", "VirtualBox", "ZeroTier"]
+        "tecnologias": ["VLANs", "IPv4/IPv6", "ZeroTier","Cisco Packet Tracer", "VirtualBox"]
       },
+
       {
-        "categoria": "Análisis de Datos",
-        "tecnologias": ["Limpieza de datos", "Transformación", "Visualización", "Big Data", "IoT"]
+        "categoria": "Automatización de Procesos",
+        "tecnologias": ["Power Automate", "Zapier", "Integromat"]
       },
+    
       {
-        "categoria": "IA Aplicada",
-        "tecnologias": ["ChatGPT", "GitHub Copilot", "Gemini"]
+     "categoria": "Vibe Coding",
+"tecnologias": ["ChatGPT", "GitHub Copilot", "Claude", "Gemini"]
       },
       {
         "categoria": "Gestión IT",
@@ -122,17 +165,19 @@
         "tecnologias": ["Gestión de accesos", "Backups", "Protección de redes"]
       },
       {
-        "categoria": "Herramientas",
-        "tecnologias": ["Git", "GitHub", "VS Code", "LaTeX", "Windows", "Linux"]
+        "categoria": "Herramientas de Desarrollo y Colaboración",
+        "tecnologias": ["Git", "LaTeX","VS Community", "GitHub", "VS Code", "Windows", "Linux"]
       }
     ],
     "blandas": [
-      "Comunicación efectiva",
+      "Proactividad",
       "Trabajo en equipo",
-      "Liderazgo y toma de decisiones",
+      "Liderazgo",
       "Pensamiento crítico",
-      "Organización y gestión del tiempo",
-      "Adaptabilidad y aprendizaje continuo"
+      "Resiliencia",
+      "Creatividad",
+      "Adaptabilidad",
+      "Comunicación"
     ]
   },
 
