@@ -42,7 +42,7 @@
     },
     {
       "id": 3,
-      "titulo": "Aurora Boutique - Tienda de Moda en Línea",
+      "titulo": "Aurora Boutique — Tienda Femenina",
       "descripcion": "E-commerce completo para tienda de ropa femenina con catálogo de productos, carrito de compras, gestión de pedidos, facturación en PDF enviada por correo y panel de administración con estadísticas.",
       "imagen": "aurora-boutique.jpg",
       "tecnologias": ["ASP.NET Core", "MVC", "C#", "PostgreSQL", "Entity Framework", "Bootstrap", "iTextSharp"],
@@ -50,6 +50,17 @@
       "curso": "IF-5100 Administración de Bases de Datos · I Ciclo 2026",
       "profesor": "MSc. Andrés Alberto Cortés Fuentes",
       "grupal": true
+    },
+    {
+      "id": 5,
+      "titulo": "El Impostor Ambiental",
+      "descripcion": "Juego educativo de deducción multijugador local con temática ecológica. Los jugadores reciben roles secretos: la mayoría conoce una palabra ambiental y debe dar pistas, mientras el Impostor finge conocerla. Incluye efectos de sonido, animaciones CSS y 15 palabras temáticas.",
+      "imagen": "El_Impostor_Ambiental.png",
+      "tecnologias": ["Vue 3", "Vite", "JavaScript", "CSS"],
+      "enlace": "https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental",
+      "curso": "IF-7102 Multimedios · I Ciclo 2026",
+      "profesor": "Lic. Iván Alonso Chavarría Cubero",
+      "grupal": false
     },
     {
       "id": 4,
@@ -126,21 +137,25 @@
         "categoria": "Desarrollo Web",
         "tecnologias": ["HTML5", "CSS", "JavaScript", "PHP", "Java", "C#", "Python", "ASP.NET", "MVC", "APIs"]
       },
+     {
+        "categoria": "Análisis de Datos",
+        "tecnologias": ["Power BI", "Excel", "Tableau"]
+      },
       {
-        "categoria": "Bases de Datos",
-        "tecnologias": ["MySQL", "PostgreSQL", "MongoDB"]
+        "categoria": "Fundamentos TI",
+        "tecnologias": ["Big Data", "IoT", "Redes", "Ciberseguridad"]
       },
       {
         "categoria": "Redes",
-        "tecnologias": ["VLANs", "IPv4/IPv6", "Cisco Packet Tracer", "VirtualBox", "ZeroTier"]
+        "tecnologias": ["VLANs", "IPv4/IPv6", "ZeroTier","Cisco Packet Tracer", "VirtualBox"]
       },
       {
         "categoria": "Análisis de Datos",
-        "tecnologias": ["Limpieza de datos", "Transformación", "Visualización", "Big Data", "IoT"]
+        "tecnologias": ["Limpieza de datos", "Transformación", "Power BI","Visualización", "IoT","Big Data"]
       },
       {
-        "categoria": "IA Aplicada",
-        "tecnologias": ["ChatGPT", "GitHub Copilot", "Gemini"]
+     "categoria": "Vibe Coding",
+"tecnologias": ["ChatGPT", "GitHub Copilot", "Claude", "Gemini"]
       },
       {
         "categoria": "Gestión IT",
@@ -152,16 +167,18 @@
       },
       {
         "categoria": "Herramientas",
-        "tecnologias": ["Git", "GitHub", "VS Code", "LaTeX", "Windows", "Linux"]
+        "tecnologias": ["Git", "LaTeX","VS Community", "GitHub", "VS Code", "Windows", "Linux"]
       }
     ],
     "blandas": [
-      "Comunicación efectiva",
+      "Proactividad",
       "Trabajo en equipo",
-      "Liderazgo y toma de decisiones",
+      "Liderazgo",
       "Pensamiento crítico",
-      "Organización y gestión del tiempo",
-      "Adaptabilidad y aprendizaje continuo"
+      "Resiliencia",
+      "Creatividad",
+      "Adaptabilidad",
+      "Comunicación"
     ]
   },
 

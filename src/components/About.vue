@@ -4,6 +4,10 @@
 
       <!-- Foto circular centrada -->
       <div class="foto-ondas" v-if="!imgFallback">
+        <div class="onda onda-suave onda-s1"></div>
+        <div class="onda onda-suave onda-s2"></div>
+        <div class="onda onda-freq onda-f1"></div>
+        <div class="onda onda-freq onda-f2"></div>
         <img
           class="about-foto"
           :src="fotoSrc"
@@ -229,22 +233,44 @@ onMounted(() => {
   align-items: center;
 }
 
-.foto-ondas::before,
-.foto-ondas::after {
-  content: '';
+.onda {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 2px solid var(--verde-2);
   opacity: 0;
-  animation: onda 2.4s ease-out infinite;
+  pointer-events: none;
 }
 
-.foto-ondas::after { animation-delay: 1.2s; }
+/* Anillos suaves */
+.onda-suave {
+  border: 2px solid var(--verde-2);
+  animation: onda-circulo 2.6s ease-out infinite;
+}
+.onda-s1 { animation-delay: 0s; }
+.onda-s2 { animation-delay: 1.3s; }
 
-@keyframes onda {
-  0%   { transform: scale(1);   opacity: 0.65; }
-  100% { transform: scale(2.6); opacity: 0; }
+/* Anillos tipo frecuencia: segmentados + rotan */
+.onda-freq {
+  background: repeating-conic-gradient(
+    from 0deg,
+    var(--verde-2) 0deg 5deg,
+    transparent 5deg 16deg
+  );
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 3px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #fff calc(100% - 3px));
+  animation: onda-frecuencia 2.6s ease-out infinite;
+}
+.onda-f1 { animation-delay: 0.65s; }
+.onda-f2 { animation-delay: 1.95s; }
+
+@keyframes onda-circulo {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  100% { transform: scale(1.75); opacity: 0; }
+}
+
+@keyframes onda-frecuencia {
+  0%   { transform: scale(1)    rotate(0deg);   opacity: 0.7; }
+  100% { transform: scale(1.75) rotate(135deg); opacity: 0; }
 }
 
 .about-foto {
@@ -368,6 +394,10 @@ onMounted(() => {
   padding: var(--espacio-sm) var(--espacio-md);
   box-shadow: var(--sombra-md);
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--espacio-xs);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -382,7 +412,7 @@ onMounted(() => {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: var(--espacio-xs);
+  text-align: center;
   max-width: none;
 }
 

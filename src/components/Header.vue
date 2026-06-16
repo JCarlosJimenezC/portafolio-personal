@@ -18,7 +18,7 @@
         height="90"
         decoding="async"
       />
-      <h2 class="nombre">Juan Carlos Jiménez</h2>
+      <h2 class="nombre">Juan Carlos Jiménez Castrillo</h2>
       <p class="titulo">Informática Empresarial</p>
     </div>
 
