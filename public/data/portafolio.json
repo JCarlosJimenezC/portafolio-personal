@@ -138,21 +138,20 @@
         "tecnologias": ["HTML5", "CSS", "JavaScript", "PHP", "Java", "C#", "Python", "ASP.NET", "MVC", "APIs"]
       },
      {
-        "categoria": "Análisis de Datos",
+        "categoria": "Herramientas de Análisis de Datos",
         "tecnologias": ["Power BI", "Excel", "Tableau"]
       },
-      {
-        "categoria": "Fundamentos TI",
-        "tecnologias": ["Big Data", "IoT", "Redes", "Ciberseguridad"]
-      },
+  
       {
         "categoria": "Redes",
         "tecnologias": ["VLANs", "IPv4/IPv6", "ZeroTier","Cisco Packet Tracer", "VirtualBox"]
       },
+
       {
-        "categoria": "Análisis de Datos",
-        "tecnologias": ["Limpieza de datos", "Transformación", "Power BI","Visualización", "IoT","Big Data"]
+        "categoria": "Automatización de Procesos",
+        "tecnologias": ["Power Automate", "Zapier", "Integromat"]
       },
+    
       {
      "categoria": "Vibe Coding",
 "tecnologias": ["ChatGPT", "GitHub Copilot", "Claude", "Gemini"]
@@ -166,7 +165,7 @@
         "tecnologias": ["Gestión de accesos", "Backups", "Protección de redes"]
       },
       {
-        "categoria": "Herramientas",
+        "categoria": "Herramientas de Desarrollo y Colaboración",
         "tecnologias": ["Git", "LaTeX","VS Community", "GitHub", "VS Code", "Windows", "Linux"]
       }
     ],
