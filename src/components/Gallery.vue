@@ -86,6 +86,8 @@ let startX = 0
 let posX = 0
 let navTimeout = null
 let trackInterval = null
+let wheelTimeout = null
+let isWheeling = false
 
 // ── Animación ───────────────────────────────────────────
 function translateActual() {
@@ -156,6 +158,31 @@ function seleccionarDot(i) {
   }, 420)
 }
 
+// ── Wheel / touchpad ────────────────────────────────────
+function onWheel(e) {
+  const esHorizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY)
+  if (!esHorizontal) return
+  e.preventDefault()
+
+  if (!isWheeling) {
+    isWheeling = true
+    posX = pausarAnim()
+  }
+
+  const mitad = pista.value.scrollWidth / 2
+  let newX = posX - e.deltaX
+  if (newX > 0) newX -= mitad
+  if (newX < -mitad) newX += mitad
+  posX = newX
+  pista.value.style.transform = `translateX(${newX}px)`
+
+  clearTimeout(wheelTimeout)
+  wheelTimeout = setTimeout(() => {
+    isWheeling = false
+    if (!hovering) reanudarAnim(posX)
+  }, 600)
+}
+
 // ── Drag ────────────────────────────────────────────────
 function onPointerDown(e) {
   if (e.target.closest('a, button')) return
@@ -185,8 +212,16 @@ function onPointerUp() {
   reanudarAnim(posX)
 }
 
-onMounted(() => { trackInterval = setInterval(actualizarDot, 400) })
-onUnmounted(() => { clearInterval(trackInterval); clearTimeout(navTimeout) })
+onMounted(() => {
+  trackInterval = setInterval(actualizarDot, 400)
+  pista.value.addEventListener('wheel', onWheel, { passive: false })
+})
+onUnmounted(() => {
+  clearInterval(trackInterval)
+  clearTimeout(navTimeout)
+  clearTimeout(wheelTimeout)
+  pista.value?.removeEventListener('wheel', onWheel)
+})
 </script>
 
 <style>
@@ -227,6 +262,7 @@ onUnmounted(() => { clearInterval(trackInterval); clearTimeout(navTimeout) })
   animation: scroll-infinito 22s linear infinite;
   cursor: grab;
   user-select: none;
+  touch-action: none;
 }
 
 
