@@ -262,7 +262,7 @@ onUnmounted(() => {
   animation: scroll-infinito 22s linear infinite;
   cursor: grab;
   user-select: none;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 
