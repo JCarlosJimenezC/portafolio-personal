@@ -14,7 +14,10 @@
         >
           <article v-for="proyecto in proyectos" :key="`a-${proyecto.id}`" class="proyecto-card">
             <div class="proyecto-img-wrapper">
-              <img :src="getImageUrl(proyecto.imagen)" :alt="proyecto.titulo" class="proyecto-img" loading="lazy" decoding="async" />
+              <img v-if="!imgFallbacks[proyecto.id]" :src="getImageUrl(proyecto.imagen)" :alt="proyecto.titulo" class="proyecto-img" loading="lazy" decoding="async" @error="onImgError(proyecto.id)" />
+              <div v-else class="proyecto-img-fallback">
+                <p>Imagen del proyecto {{ proyecto.titulo }}</p>
+              </div>
               <span class="badge-tipo" :class="proyecto.grupal ? 'badge-grupal' : 'badge-individual'">
                 {{ proyecto.grupal ? 'Proyecto grupal' : 'Individual' }}
               </span>
@@ -33,7 +36,10 @@
 
           <article v-for="proyecto in proyectos" :key="`b-${proyecto.id}`" class="proyecto-card" aria-hidden="true">
             <div class="proyecto-img-wrapper">
-              <img :src="getImageUrl(proyecto.imagen)" :alt="proyecto.titulo" class="proyecto-img" loading="lazy" decoding="async" />
+              <img v-if="!imgFallbacks[proyecto.id]" :src="getImageUrl(proyecto.imagen)" :alt="proyecto.titulo" class="proyecto-img" loading="lazy" decoding="async" @error="onImgError(proyecto.id)" />
+              <div v-else class="proyecto-img-fallback">
+                <p>Imagen del proyecto {{ proyecto.titulo }}</p>
+              </div>
               <span class="badge-tipo" :class="proyecto.grupal ? 'badge-grupal' : 'badge-individual'">
                 {{ proyecto.grupal ? 'Proyecto grupal' : 'Individual' }}
               </span>
@@ -68,12 +74,18 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, reactive, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({ proyectos: { type: Array, required: true } })
 
 function getImageUrl(nombre) {
   return new URL(`../assets/images/${nombre}`, import.meta.url).href
+}
+
+const imgFallbacks = reactive({})
+
+function onImgError(id) {
+  imgFallbacks[id] = true
 }
 
 const DURACION = 22
@@ -294,6 +306,22 @@ onUnmounted(() => {
   transition: transform 0.4s ease;
 }
 .proyecto-card:hover .proyecto-img { transform: scale(1.05); }
+
+.proyecto-img-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--espacio-sm);
+  background: rgba(0, 0, 0, 0.3);
+}
+.proyecto-img-fallback p {
+  color: var(--gris-claro);
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.4;
+}
 
 .badge-tipo {
   position: absolute;

@@ -41,13 +41,129 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 
 ## 4. Proyectos académicos exhibidos
 
-| # | Proyecto | Curso | Profesor | Repositorio |
-|---|---|---|---|---|
-| 1 | Guía Turística Multimedia Costa Rica *(grupal)* | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/proyecto-guia-turistica |
-| 2 | Sistema de Gestión de Restaurante *(grupal)* | IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026 · UCR | Luis Fernando Charpentier González | https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante |
-| 3 | Aurora Boutique — Tienda Femenina *(grupal)* | IF-5100 Administración de Bases de Datos · I Ciclo 2026 · UCR | MSc. Andrés Alberto Cortés Fuentes | https://github.com/TatianaJSM/BoutiqueAurora |
-| 4 | El Impostor Ambiental | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental |
-| 5 | Sistema de Declaraciones Juradas UCR *(grupal)* | IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/1KATZUNO/Declaracion_Jurada |
+| # | Proyecto | Tipo | Curso | Profesor encargado | Repositorio |
+|---|---|---|---|---|---|
+| 1 | Guía Turística Multimedia Costa Rica | Grupal | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/proyecto-guia-turistica |
+| 2 | Sistema de Gestión de Restaurante | Grupal | IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026 · UCR | Luis Fernando Charpentier González | https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante |
+| 3 | Aurora Boutique — Tienda Femenina | Grupal | IF-5100 Administración de Bases de Datos · I Ciclo 2026 · UCR | MSc. Andrés Alberto Cortés Fuentes | https://github.com/TatianaJSM/BoutiqueAurora |
+| 4 | El Impostor Ambiental | Individual | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental |
+| 5 | Sistema de Declaraciones Juradas UCR | Grupal | IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/1KATZUNO/Declaracion_Jurada |
+| 6 | Reciclaje Sámara | Individual | — | — | https://github.com/JCarlosJimenezC/Reciclaje-Samara |
+| 7 | Sexy Mango Challenge | Individual | — | — | https://jcarlosjimenzc.github.io/SexyMango/ |
+
+---
+
+### 4.1 Integrantes por proyecto
+
+#### 1. Guía Turística Multimedia Costa Rica
+
+**Profesor encargado:** Lic. Iván Alonso Chavarría Cubero
+
+| Carné | Estudiante |
+|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos |
+| C36462 | Ramírez Sandoval Demian Josué |
+| C37730 | Sosa Rodríguez Kener Josué |
+| C35880 | Parra Aguirre Maylo |
+| C35652 | Obando González Joshua |
+
+#### 2. Sistema de Gestión de Restaurante
+
+**Profesor encargado:** Luis Fernando Charpentier González
+
+| Carné | Estudiante |
+|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos |
+| C33417 | González Quirós Eddy Josué |
+| C37730 | Sosa Rodríguez Kener Josué |
+| C35880 | Parra Aguirre Maylo |
+
+#### 3. Aurora Boutique — Tienda Femenina
+
+**Profesor encargado:** MSc. Andrés Alberto Cortés Fuentes
+
+| Carné | Estudiante |
+|---|---|
+| C34080 | Jiménez Solís Tatiana María |
+| C33631 | Guzmán Gómez Manuel Esteban |
+| C33980 | Jiménez Castrillo Juan Carlos |
+| C34386 | López Reyes Alison Sofía |
+| C33417 | González Quirós Eddy Josué |
+| C34387 | López Reyes Keity Valeria |
+
+#### 4. El Impostor Ambiental *(individual)*
+
+**Profesor encargado:** Lic. Iván Alonso Chavarría Cubero
+
+| Carné | Estudiante |
+|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos |
+
+#### 5. Sistema de Declaraciones Juradas UCR
+
+**Profesor encargado:** Lic. Iván Alonso Chavarría Cubero
+
+**Grupo 5 — grupo del autor**
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos | juan.jimenezcastrillo@ucr.ac.cr |
+| C33417 | González Quirós Eddy Josué | eddy.gonzalezquiros@ucr.ac.cr |
+| C35652 | Obando González Joshua David | joshua.obandogonzalez@ucr.ac.cr |
+| C35880 | Parra Aguirre Maylo Daring | maylo.parra@ucr.ac.cr |
+| C37730 | Sosa Rodríguez Kener Josué | kener.sosa@ucr.ac.cr |
+| C36462 | Ramírez Sandoval Demian | demian.ramirez@ucr.ac.cr |
+
+**Grupo 6**
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C01729 | Carrillo Ponce Austin Antonio | austin.carrillo@ucr.ac.cr |
+| C35538 | Narváez Umaña Ashley Dariana | ashley.narvaez@ucr.ac.cr |
+| C35697 | Oporta Campos Chrisley | chrisley.oporta@ucr.ac.cr |
+| C31386 | Caballero Jarquín Nathalie Tamara | nathalie.caballero@ucr.ac.cr |
+| B56394 | Ruíz Pérez Oscar | oscar.ruizperez@ucr.ac.cr |
+
+**Grupo 7**
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C24594 | Martínez Martínez Emiliano | emiliano.martinez@ucr.ac.cr |
+| C24318 | López Alvarado Israel | israel.lopezalvarado@ucr.ac.cr |
+| C28846 | Calderón Espinoza Bryan Josué | brayan.calderonespinoza@ucr.ac.cr |
+| C09149 | Ortiz Martínez Dany Josué | danny.ortizmartinez@ucr.ac.cr |
+| C31592 | Campos Mora César Alberto | cesar.camposmora@ucr.ac.cr |
+
+**Grupo 8**
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C27912 | Umaña Guevara Alexander | alexander.umanaguevara@ucr.ac.cr |
+| C18966 | Chavarría Duarte Eli | eli.chavarria@ucr.ac.cr |
+| C10098 | Aguilar Alvarado Esteban | esteban.aguilaralvarado@ucr.ac.cr |
+| C16913 | Rojas Zúñiga Bryan | bryan.rojaszuniga@ucr.ac.cr |
+
+**Grupo 9**
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C23740 | Hernández González Rafael David | rafael.hernandez@ucr.ac.cr |
+| C36641 | Rodríguez Badilla Ángeles | angeles.rodriguez@ucr.ac.cr |
+| C07126 | Salazár Hernández Gerald | gerald.salazarhernandez@ucr.ac.cr |
+| C10487 | Arauz Villanueva Clivian | clivian.arauz@ucr.ac.cr |
+| C34106 | Juárez González Elfred Adal | elfred.juarez@ucr.ac.cr |
+
+#### 6. Reciclaje Sámara *(individual)*
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos | juan.jimenezcastrillo@ucr.ac.cr |
+
+#### 7. Sexy Mango Challenge *(individual)*
+
+| Carné | Estudiante | Correo |
+|---|---|---|
+| C33980 | Jiménez Castrillo Juan Carlos | juan.jimenezcastrillo@ucr.ac.cr |
 
 ---
 
@@ -64,6 +180,8 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 | Imagen proyecto 3 — Aurora Boutique | `aurora-boutique.jpg` | Captura de pantalla de proyecto propio | Autoría propia |
 | Imagen proyecto 4 — El Impostor Ambiental | `El_Impostor_Ambiental.png` | Captura de pantalla de proyecto propio | Autoría propia |
 | Imagen proyecto 5 — Declaraciones Juradas | `Declaracion-jurada.png` | Captura de pantalla de proyecto propio | Autoría propia |
+| Imagen proyecto 6 — Reciclaje Sámara | `Reciclaje-Samara.png` | Captura de pantalla de proyecto propio | Autoría propia |
+| Imagen proyecto 7 — Sexy Mango Challenge | `Sexy-Mango.png` | Captura de pantalla de proyecto propio | Autoría propia |
 | Tipografía Inter | `Inter.var.woff2` | Rasmus Andersson / Google Fonts | SIL Open Font License 1.1 |
 
 ---

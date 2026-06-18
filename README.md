@@ -58,6 +58,8 @@ portafolio-personal/
 
 ## Capturas de pantalla
 
+### Vista escritorio
+
 | Sección | Vista |
 |---|---|
 | Sobre mí | ![Sobre mí](screenshots/Sobre_mi.jpeg) |
@@ -66,6 +68,34 @@ portafolio-personal/
 | Experiencia | ![Experiencia](screenshots/Experiencia.jpeg) |
 | Educación | ![Educación](screenshots/Educación.jpeg) |
 | Contacto | ![Contacto](screenshots/Contacto.jpeg) |
+
+### Vista móvil
+
+| Vista |
+|---|
+| ![Vista móvil 1](screenshots/Vistamovil-1.png) |
+| ![Vista móvil 2](screenshots/Vistamovil-2.png) |
+
+## Despliegue a GitHub Pages
+
+```bash
+pnpm run deploy
+```
+
+O con npm:
+
+```bash
+npm run deploy
+```
+
+### Equivalencias npm ↔ pnpm para gh-pages
+
+| Acción | npm | pnpm | ¿Se usa en Vue 3? |
+|---|---|---|---|
+| Instalar gh-pages | `npm install --save-dev gh-pages` | `pnpm add -D gh-pages` | ✅ Sí |
+| Desplegar | `npm run deploy` | `pnpm run deploy` | ✅ Sí |
+
+---
 
 ## Información del curso
 

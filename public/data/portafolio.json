@@ -25,30 +25,6 @@
       "imagen": "Guia-Turistica.png",
       "tecnologias": ["Web Components", "SVG", "JavaScript", "CSS", "GitHub Pages"],
       "enlace": "https://github.com/JCarlosJimenezC/proyecto-guia-turistica",
-      "curso": "IF-7102 Multimedios · I Ciclo 2026",
-      "profesor": "Lic. Iván Alonso Chavarría Cubero",
-      "grupal": true
-    },
-    {
-      "id": 2,
-      "titulo": "Sistema de Gestión de Restaurante",
-      "descripcion": "Aplicación ASP.NET Core MVC para la administración integral de un restaurante: gestión de menú, pedidos, inventario y reportes de ventas con base de datos SQL Server. Proyecto grupal.",
-      "imagen": "Gestor-Restaurante.png",
-      "tecnologias": ["ASP.NET Core", "MVC", "C#", "SQL Server", "Bootstrap"],
-      "enlace": "https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante",
-      "curso": "IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026",
-      "profesor": "Luis Fernando Charpentier González",
-      "grupal": true
-    },
-    {
-      "id": 3,
-      "titulo": "Aurora Boutique — Tienda Femenina",
-      "descripcion": "E-commerce completo para tienda de ropa femenina con catálogo de productos, carrito de compras, gestión de pedidos, facturación en PDF enviada por correo y panel de administración con estadísticas.",
-      "imagen": "aurora-boutique.jpg",
-      "tecnologias": ["ASP.NET Core", "MVC", "C#", "PostgreSQL", "Entity Framework", "Bootstrap", "iTextSharp"],
-      "enlace": "https://github.com/TatianaJSM/BoutiqueAurora",
-      "curso": "IF-5100 Administración de Bases de Datos · I Ciclo 2026",
-      "profesor": "MSc. Andrés Alberto Cortés Fuentes",
       "grupal": true
     },
     {
@@ -58,8 +34,42 @@
       "imagen": "El_Impostor_Ambiental.png",
       "tecnologias": ["Vue 3", "Vite", "JavaScript", "CSS"],
       "enlace": "https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental",
-      "curso": "IF-7102 Multimedios · I Ciclo 2026",
-      "profesor": "Lic. Iván Alonso Chavarría Cubero",
+      "grupal": false
+    },
+    {
+      "id": 2,
+      "titulo": "Sistema de Gestión de Restaurante",
+      "descripcion": "Aplicación ASP.NET Core MVC para la administración integral de un restaurante: gestión de menú, pedidos, inventario y reportes de ventas con base de datos SQL Server. Proyecto grupal.",
+      "imagen": "Gestor-Restaurante.png",
+      "tecnologias": ["ASP.NET Core", "MVC", "C#", "SQL Server", "Bootstrap"],
+      "enlace": "https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante",
+      "grupal": true
+    },
+    {
+      "id": 6,
+      "titulo": "Reciclaje Sámara",
+      "descripcion": "Sistema de gestión de reciclaje para la comunidad de Sámara, Guanacaste. Arquitectura cliente-servidor: API REST con Laravel 13 centraliza la base de datos SQLite, y un cliente de consola en C# (.NET 10) simula estaciones físicas de recolección. Panel de administración web con dashboard, CRUD de materiales, estaciones y usuarios, ranking de recicladores y reportes por material.",
+      "imagen": "Reciclaje-Samara.png",
+      "tecnologias": ["Laravel", "PHP", "C#", ".NET 10", "SQLite", "REST API", "Blade", "Sanctum"],
+      "enlace": "https://github.com/JCarlosJimenezC/Reciclaje-Samara",
+      "grupal": false
+    },
+    {
+      "id": 3,
+      "titulo": "Aurora Boutique — Tienda Femenina",
+      "descripcion": "E-commerce completo para tienda de ropa femenina con catálogo de productos, carrito de compras, gestión de pedidos, facturación en PDF enviada por correo y panel de administración con estadísticas.",
+      "imagen": "aurora-boutique.jpg",
+      "tecnologias": ["ASP.NET Core", "MVC", "C#", "PostgreSQL", "Entity Framework", "Bootstrap", "iTextSharp"],
+      "enlace": "https://github.com/TatianaJSM/BoutiqueAurora",
+      "grupal": true
+    },
+    {
+      "id": 7,
+      "titulo": "Sexy Mango Challenge",
+      "descripcion": "Juego de cartas 'Verdad o Reto' para eventos y reuniones. Los jugadores eligen el nivel de intensidad (Suave, Picante o Extremo) y revelan cartas boca abajo por turno con 20 segundos para completar cada reto o verdad. Construido con Angular 21 usando Standalone Components y Signals; efectos de sonido generados en tiempo real con la Web Audio API y resumen final de la partida.",
+      "imagen": "Sexy-Mango.png",
+      "tecnologias": ["Angular 21", "TypeScript", "Signals", "CSS", "Web Audio API", "GitHub Pages"],
+      "enlace": "https://jcarlosjimenzc.github.io/SexyMango/",
       "grupal": false
     },
     {
@@ -69,8 +79,6 @@
       "imagen": "Declaracion-jurada.png",
       "tecnologias": ["Laravel", "PHP", "Inertia.js", "React", "SQLite", "DomPDF", "PhpSpreadsheet"],
       "enlace": "https://github.com/1KATZUNO/Declaracion_Jurada",
-      "curso": "IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026",
-      "profesor": "Lic. Iván Alonso Chavarría Cubero",
       "grupal": true
     }
   ],
