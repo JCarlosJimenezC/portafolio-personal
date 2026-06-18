@@ -1,13 +1,13 @@
 <template>
-  <AppHeader />
+  <AppHeader v-if="portfolio" :personal="portfolio.personal" />
   <main class="main-content">
     <div v-if="portfolio">
-      <About    :personal="portfolio.personal" />
-      <Gallery  :proyectos="portfolio.proyectos" />
-      <Skills   :habilidades="portfolio.habilidades" />
-      <Education />
-      <Experiencia />
-      <Contact />
+      <About       :personal="portfolio.personal" />
+      <Gallery     :proyectos="portfolio.proyectos" />
+      <Skills      :habilidades="portfolio.habilidades" />
+      <Education   :educacion="portfolio.educacion" />
+      <Experiencia :experiencia="portfolio.experiencia" />
+      <Contact     :contacto="portfolio.personal.contacto" />
     </div>
     <div v-else class="loading" aria-live="polite">Cargando...</div>
   </main>

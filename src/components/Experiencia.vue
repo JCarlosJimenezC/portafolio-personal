@@ -4,7 +4,7 @@
       <h2 class="titulo-seccion">Experiencia</h2>
       <div class="timeline">
         <ExperienceCard
-          v-for="exp in experiencia"
+          v-for="exp in props.experiencia"
           :key="exp.id"
           :empresa="exp.empresa"
           :rol="exp.puesto"
@@ -18,20 +18,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
 import ExperienceCard from './ExperienceCard.vue'
 
-const experiencia = ref([])
-
-onMounted(async () => {
-  try {
-    const res = await fetch(`${import.meta.env.BASE_URL}data/portafolio.json`)
-    const datos = await res.json()
-    experiencia.value = datos.experiencia
-  } catch (err) {
-    console.error('Error cargando experiencia:', err)
-  }
-})
+const props = defineProps({ experiencia: { type: Array, required: true } })
 </script>
 
 <style scoped>

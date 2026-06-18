@@ -112,13 +112,14 @@
 
 <script setup>
 import { ref, onMounted, computed } from 'vue'
-import fotoSrc from '@/assets/images/juanky.png'
-import audioSrc from '@/assets/audio/juanky-audio.mp3'
-import videoSrc from '@/assets/video/juanky-video.mp4'
 
 const props = defineProps({
   personal: { type: Object, required: true }
 })
+
+const fotoSrc  = computed(() => new URL(`../assets/images/${props.personal.foto}`,  import.meta.url).href)
+const audioSrc = computed(() => new URL(`../assets/audio/${props.personal.audio}`,  import.meta.url).href)
+const videoSrc = computed(() => new URL(`../assets/video/${props.personal.video}`,  import.meta.url).href)
 
 const perfilLineas = computed(() => {
   if (!props.personal?.perfil) return []

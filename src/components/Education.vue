@@ -4,7 +4,7 @@
       <h2 class="titulo-seccion">Educación</h2>
       <div class="timeline">
         <article
-          v-for="(item, i) in educacion"
+          v-for="(item, i) in props.educacion"
           :key="item.id"
           class="edu-item"
           :ref="el => { if (el) itemRefs[i] = el }"
@@ -25,21 +25,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
-const educacion = ref([])
+const props = defineProps({ educacion: { type: Array, required: true } })
 const itemRefs = ref([])
 let observer = null
 
 onMounted(async () => {
-  try {
-    const res = await fetch(`${import.meta.env.BASE_URL}data/portafolio.json`)
-    const datos = await res.json()
-    educacion.value = datos.educacion
-  } catch (err) {
-    console.error('Error cargando educación:', err)
-  }
-
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -51,10 +43,8 @@ onMounted(async () => {
     },
     { threshold: 0.2 }
   )
-
-  setTimeout(() => {
-    itemRefs.value.forEach((el) => el && observer?.observe(el))
-  }, 50)
+  await nextTick()
+  itemRefs.value.forEach((el) => el && observer?.observe(el))
 })
 
 onUnmounted(() => observer?.disconnect())

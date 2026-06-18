@@ -18,8 +18,8 @@
         height="90"
         decoding="async"
       />
-      <h2 class="nombre">Juan Carlos Jiménez Castrillo</h2>
-      <p class="titulo">Informática Empresarial</p>
+      <h2 class="nombre">{{ personal.nombre }}</h2>
+      <p class="titulo">{{ personal.profesion }}</p>
     </div>
 
     <hr class="separador" />
@@ -39,7 +39,7 @@
 
     <div class="redes">
       <a
-        href="https://github.com/JCarlosJimenezC"
+        :href="personal.contacto.github"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -50,7 +50,7 @@
         </svg>
       </a>
       <a
-        href="http://www.youtube.com/@JcarlosJiménez-h8v"
+        :href="personal.contacto.youtube"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="YouTube"
@@ -65,8 +65,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import fotoSrc from '@/assets/images/juanky.png'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+
+const props = defineProps({ personal: { type: Object, required: true } })
+const fotoSrc = computed(() => new URL(`../assets/images/${props.personal.foto}`, import.meta.url).href)
 
 const menuAbierto = ref(false)
 const seccionActiva = ref('about')
