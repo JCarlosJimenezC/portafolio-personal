@@ -9,7 +9,7 @@
       <Experiencia :experiencia="portfolio.experiencia" />
       <Contact     :contacto="portfolio.personal.contacto" />
     </div>
-    <div v-else class="loading" aria-live="polite">Cargando...</div>
+    <div v-else class="loading" aria-live="polite"></div>
   </main>
 </template>
 
