@@ -69,7 +69,7 @@
       "descripcion": "Juego de cartas 'Verdad o Reto' para eventos y reuniones. Los jugadores eligen el nivel de intensidad (Suave, Picante o Extremo) y revelan cartas boca abajo por turno con 20 segundos para completar cada reto o verdad. Construido con Angular 21 usando Standalone Components y Signals; efectos de sonido generados en tiempo real con la Web Audio API y resumen final de la partida.",
       "imagen": "Sexy-Mango.png",
       "tecnologias": ["Angular 21", "TypeScript", "Signals", "CSS", "Web Audio API", "GitHub Pages"],
-      "enlace": "https://jcarlosjimenzc.github.io/SexyMango/",
+      "enlace": "https://github.com/JCarlosJimenezC/SexyMango",
       "grupal": false
     },
     {

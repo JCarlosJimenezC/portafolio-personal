@@ -49,7 +49,7 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 | 4 | El Impostor Ambiental | Individual | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental |
 | 5 | Sistema de Declaraciones Juradas UCR | Grupal | IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/1KATZUNO/Declaracion_Jurada |
 | 6 | Reciclaje Sámara | Individual | — | — | https://github.com/JCarlosJimenezC/Reciclaje-Samara |
-| 7 | Sexy Mango Challenge | Individual | — | — | https://jcarlosjimenzc.github.io/SexyMango/ |
+| 7 | Sexy Mango Challenge | Individual | — | — | https://github.com/JCarlosJimenezC/SexyMango |
 
 ---
 
