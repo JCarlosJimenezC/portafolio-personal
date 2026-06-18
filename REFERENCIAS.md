@@ -46,7 +46,7 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 | 1 | Guía Turística Multimedia Costa Rica | Grupal | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/proyecto-guia-turistica |
 | 2 | Sistema de Gestión de Restaurante | Grupal | IF-4101 Lenguajes para Aplicaciones Comerciales · I Ciclo 2026 · UCR | Luis Fernando Charpentier González | https://git.ucr.ac.cr/JUAN.JIMENEZCASTRILLO/gestorderestaurante |
 | 3 | Aurora Boutique — Tienda Femenina | Grupal | IF-5100 Administración de Bases de Datos · I Ciclo 2026 · UCR | MSc. Andrés Alberto Cortés Fuentes | https://github.com/TatianaJSM/BoutiqueAurora |
-| 4 | El Impostor Ambiental | Individual | IF-7102 Multimedios · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental |
+| 4 | El Impostor Ambiental | Individual | — | — | https://github.com/JCarlosJimenezC/Video-Juego---Impostor-Ambiental |
 | 5 | Sistema de Declaraciones Juradas UCR | Grupal | IF6100 Análisis & Diseño de Sistemas · I Ciclo 2026 · UCR | Lic. Iván Alonso Chavarría Cubero | https://github.com/1KATZUNO/Declaracion_Jurada |
 | 6 | Reciclaje Sámara | Individual | — | — | https://github.com/JCarlosJimenezC/Reciclaje-Samara |
 | 7 | Sexy Mango Challenge | Individual | — | — | https://github.com/JCarlosJimenezC/SexyMango |
@@ -92,8 +92,6 @@ Recursos consultados para el aprendizaje de Vue 3 y la construcción del portafo
 | C34387 | López Reyes Keity Valeria |
 
 #### 4. El Impostor Ambiental *(individual)*
-
-**Profesor encargado:** Lic. Iván Alonso Chavarría Cubero
 
 | Carné | Estudiante |
 |---|---|
