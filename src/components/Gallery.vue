@@ -11,6 +11,7 @@
           @pointermove="onPointerMove"
           @pointerup="onPointerUp"
           @pointerleave="onPointerUp"
+          @pointercancel="onPointerUp"
         >
           <article v-for="proyecto in proyectos" :key="`a-${proyecto.id}`" class="proyecto-card">
             <div class="proyecto-img-wrapper">
@@ -227,6 +228,19 @@ function onPointerUp() {
 onMounted(() => {
   trackInterval = setInterval(actualizarDot, 400)
   pista.value.addEventListener('wheel', onWheel, { passive: false })
+
+  const section = document.querySelector('#gallery')
+  if (section) {
+    const sectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !arrastrando && !hovering) {
+          reanudarAnim(posX)
+        }
+      },
+      { threshold: 0.1 }
+    )
+    sectionObserver.observe(section)
+  }
 })
 onUnmounted(() => {
   clearInterval(trackInterval)
