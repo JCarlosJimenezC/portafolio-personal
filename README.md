@@ -14,9 +14,25 @@ Sitio web de presentación profesional — Opción 1: Portfolio Multimedia Perso
 
 - Vue 3 + Composition API
 - Vite (bundler y servidor de desarrollo)
-- CSS nativo con variables personalizadas (paleta "Hills")
+- CSS nativo con variables personalizadas
 - Google Fonts — Inter
 - JSON + fetch() para carga de datos
+
+## Paleta de colores
+
+Paleta personalizada definida con variables CSS en `src/css/global.css`.
+
+| Variable | Hex | Uso |
+|---|---|---|
+| `--negro` | `#000000` | Fondo general |
+| `--negro-card` | `#111111` | Fondo de tarjetas y superficies |
+| `--blanco` | `#ffffff` | Texto principal |
+| `--verde-1` | `#39ff14` | Neon green — títulos llamativos |
+| `--verde-2` | `#00c851` | Acento principal — botones, bordes activos |
+| `--verde-3` | `#2ecc71` | Esmeralda — acento secundario |
+| `--verde-4` | `#7fff00` | Chartreuse — variante cálida |
+| `--verde-5` | `#b2ff59` | Verde pastel claro |
+| `--gris-claro` | `rgba(255,255,255,0.55)` | Texto secundario / descripciones |
 
 ## Requisitos
 
