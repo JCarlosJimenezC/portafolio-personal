@@ -8,15 +8,18 @@ Portafolio personal multimedia desarrollado con **Vue 3** + **Vite** como proyec
 
 ## Descripción
 
-Sitio web de presentación profesional — Opción 1: Portfolio Multimedia Personal. Incluye secciones de presentación, habilidades, experiencia, educación e información de contacto. Los datos se cargan dinámicamente desde `public/data/portafolio.json` con `fetch()`.
+Sitio web de presentación profesional — Opción 1: Portfolio Multimedia Personal. Incluye secciones de presentación, habilidades, experiencia, educación e información de contacto.
+
+La arquitectura sigue el patrón **Single Source of Truth**: `App.vue` realiza un único `fetch()` a `public/data/portafolio.json` al montarse y distribuye los datos a todos los componentes hijos mediante **props**. Ningún componente hijo hace su propio fetch. Los assets multimedia (foto, audio, video) se referencian con `new URL(..., import.meta.url)` para resolución dinámica de rutas procesadas por Vite.
 
 ## Tecnologías
 
-- Vue 3 + Composition API
-- Vite (bundler y servidor de desarrollo)
-- CSS nativo con variables personalizadas
+- Vue 3 + Composition API (`<script setup>`, `ref`, `computed`, `reactive`, `onMounted`)
+- Vite (bundler, servidor de desarrollo, resolución dinámica de assets con `import.meta.url`)
+- CSS nativo con variables personalizadas y animaciones `@keyframes`
+- Intersection Observer API (animaciones de entrada por scroll)
 - Google Fonts — Inter
-- JSON + fetch() para carga de datos
+- JSON + `fetch()` para carga de datos (centralizado en App.vue)
 
 ## Paleta de colores
 
